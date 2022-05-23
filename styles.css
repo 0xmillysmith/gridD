@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 80px 1fr 70px;
+}
+
+header,
+main,
+nav,
+footer,
+aside {
+  text-transform: uppercase;
+  background-color: darkorange;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 5px;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
